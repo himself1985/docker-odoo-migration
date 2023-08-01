@@ -19,11 +19,17 @@ RUN mkdir /openupgrade/10.0
 RUN mkdir /openupgrade/11.0
 RUN mkdir /openupgrade/12.0
 RUN mkdir /openupgrade/13.0
+RUN mkdir /openupgrade/14.0
+RUN mkdir /openupgrade/15.0
+RUN mkdir /openupgrade/16.0
 
 COPY openupgrade/10.0 /openupgrade/10.0
 COPY openupgrade/11.0 /openupgrade/11.0
 COPY openupgrade/12.0 /openupgrade/12.0
 COPY openupgrade/13.0 /openupgrade/13.0
+COPY openupgrade/12.0 /openupgrade/14.0
+COPY openupgrade/13.0 /openupgrade/15.0
+COPY openupgrade/13.0 /openupgrade/16.0
 
 RUN pip install --upgrade pip
 
